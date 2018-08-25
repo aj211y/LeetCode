@@ -1,0 +1,84 @@
+//No.595 - AC
+//Use SQL to select from Table
+/*
+Select 
+SELECT "欄位" FROM "表格名";
+
+Distinct 
+SELECT DISTINCT "欄位" 
+FROM "表格名";
+
+Where 
+SELECT "欄位" 
+FROM "表格名" 
+WHERE "condition";
+
+And/Or 
+SELECT "欄位" 
+FROM "表格名" 
+WHERE "簡單條件" 
+{[AND|OR] "簡單條件"}+ ;
+
+In 
+SELECT "欄位" 
+FROM "表格名" 
+WHERE "欄位" IN ('值1', '值2', ...);
+
+Between 
+SELECT "欄位" 
+FROM "表格名" 
+WHERE "欄位" BETWEEN '值1' AND '值2';
+
+Like 
+SELECT "欄位" 
+FROM "表格名" 
+WHERE "欄位" LIKE {模式};
+
+Order By 
+SELECT "欄位" 
+FROM "表格名" 
+[WHERE "條件"]
+ORDER BY "欄位" [ASC, DESC];
+
+Count 
+SELECT COUNT("欄位") 
+FROM "表格名";
+
+Group By 
+SELECT "欄位1", SUM("欄位2") 
+FROM "表格名" 
+GROUP BY "欄位1";
+
+Having 
+SELECT "欄位1", SUM("欄位2") 
+FROM "表格名" 
+GROUP BY "欄位1" 
+HAVING (函數條件);
+
+Create Table 
+CREATE TABLE "表格名"
+("欄位 1" "欄位 1 資料種類",
+"欄位 2" "欄位 2 資料種類"",
+... );
+
+Drop Table 
+DROP TABLE "表格名";
+
+Truncate Table 
+TRUNCATE TABLE "表格名";
+
+Insert Into 
+INSERT INTO "表格名" ("欄位1", "欄位2", ...)
+VALUES ("值1", "值2", ...);
+
+Update 
+UPDATE "表格名"
+SET "欄位1" = [新值]
+WHERE "條件";
+
+Delete From 
+DELETE FROM "表格名"
+WHERE "條件";
+*/
+
+SELECT name , population, area from World where ( area > 3000000 or population >= 25000000 )
